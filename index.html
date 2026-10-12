@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lopa | Portofolio</title>
+  <meta name="description" content="Portofolio Nurul Ainun Lopa, mahasiswa Informatika Universitas Muhammadiyah Maumere.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="#hero" class="logo">Lopa</a>
+    <nav id="menu" class="menu">
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#motivasi">Motivasi</a>
+    </nav>
+    <div class="aksi">
+      <button id="tema" class="ikon" aria-label="Ganti tema">🌙</button>
+      <button id="hamburger" class="ikon burger" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero">
+      <div class="hero-teks">
+        <p class="sapa">Halo, saya</p>
+        <h1 id="nama">Nurul Ainun Lopa</h1>
+        <p class="peran"><span id="mengetik"></span><span class="kursor">|</span></p>
+        <p class="ringkas">Mahasiswa Informatika di Universitas Muhammadiyah Maumere yang aktif berolahraga.</p>
+        <div class="tombol-grup">
+          <a href="#skill" class="tombol">Lihat skill</a>
+          <a href="#motivasi" class="tombol kosong">Motivasi saya</a>
+        </div>
+      </div>
+      <div class="foto-wrap">
+        <span id="inisial" class="inisial">L</span>
+        <img src="foto.JPEG" alt="Foto Nurul Ainun Lopa" class="foto" onerror="this.style.display='none'">
+      </div>
+    </section>
+
+    <section id="tentang" class="bagian muncul">
+      <h2>Tentang saya</h2>
+      <div class="dua-kolom">
+        <p>Saya Nurul Ainun Lopa, biasa dipanggil Lopa. Saya mahasiswa jurusan Informatika di Universitas Muhammadiyah Maumere.</p>
+        <p>Di luar kuliah, saya suka berolahraga, terutama voli, futsal, dan badminton.</p>
+      </div>
+      <ul class="info">
+        <li><strong>Nama lengkap</strong> Nurul Ainun Lopa</li>
+        <li><strong>Panggilan</strong> Lopa</li>
+        <li><strong>Jurusan</strong> Informatika</li>
+        <li><strong>Kampus</strong> Universitas Muhammadiyah Maumere</li>
+        <li><strong>Status</strong> Taken 💙</li>
+      </ul>
+    </section>
+
+    <section id="skill" class="bagian muncul">
+      <h2>Skill</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <div class="skill-judul"><span>Voli</span><span>100%</span></div>
+          <div class="bar"><div class="isi" data-level="100"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-judul"><span>Futsal</span><span>100%</span></div>
+          <div class="bar"><div class="isi" data-level="100"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-judul"><span>Badminton</span><span>100%</span></div>
+          <div class="bar"><div class="isi" data-level="100"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="motivasi" class="bagian muncul">
+      <h2>Motivasi</h2>
+      <blockquote class="kutipan">
+        Mimpi itu gratis, maka bermimpilah. Yang paling mahal adalah tidak bermimpi.
+      </blockquote>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="tahun"></span> Nurul Ainun Lopa. Dibuat dengan HTML, CSS, dan JavaScript.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
